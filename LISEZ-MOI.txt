@@ -1,0 +1,20 @@
+KOFFI TECH - mise en ligne sur Cloudflare Pages (modifications visibles par tous)
+
+A. Créer la base de données (une seule fois)
+ 1. dash.cloudflare.com > Stockage et bases de données > D1 > Créer une base, nom : koffitech.
+
+B. Publier le site
+ 2. Workers & Pages > Créer > Pages > Téléverser des ressources.
+ 3. Nom du projet : koffitech. Envoyez le contenu de ce dossier (index.html, _worker.js, sw.js,
+    manifest.json, icônes). Déployez : adresse https://koffitech.pages.dev
+
+C. Relier la base et le code administrateur
+ 4. Projet > Paramètres > Liaisons (Bindings) > Ajouter > base D1 : nom de variable DB, base koffitech.
+ 5. Paramètres > Variables et secrets > Ajouter un secret : ADMIN_PIN = votre code (long, 8 caractères ou plus).
+ 6. Redéployez (renvoyez le dossier) pour que les réglages soient pris en compte.
+
+D. Utilisation
+ - Ouvrez le site > Contact > Espace gestion > entrez ADMIN_PIN. Chaque produit, photo, frais de livraison,
+   annonce et position de la boutique publiés sont vus par tous les clients (mise à jour à l'ouverture et chaque minute).
+ - Les clients installent l'application depuis le lien : bouton « Télécharger l'application »
+   (Android Chrome : installation directe ; iPhone : Safari > Partager > Sur l'écran d'accueil).
